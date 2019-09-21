@@ -1,14 +1,18 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <ion-grid style="background-color: transparent">
+    <ion-col>
+      <ion-row justify-content-center>
+        <h1 class="h1-life-saver">Life Saver</h1>
+      </ion-row>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+      <ion-row style=" padding-top: 28rem" justify-content-center>
+        <button expand="block" color="dark" class="style-button" (click)="onSignUp()" ion-button> SIGN UP</button>
+      </ion-row>
+
+      <ion-row justify-content-center>
+        <button expand="block" color="dark" class="style-button" ion-button> LOG IN</button>
+      </ion-row>
+
+    </ion-col>
+  </ion-grid>
 </ion-content>
