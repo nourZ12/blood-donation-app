@@ -1,0 +1,7 @@
+{
+  "name": "blood-donate-appp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
