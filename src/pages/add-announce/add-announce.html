@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Announcement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <h1 class="mystyle">BLOOD</h1>
+  </ion-item>
+  <br>
+  <ion-item class="padding-top-date">
+    <ion-label (click)="alert()" color="input">
+      <ion-icon name="water"></ion-icon> Blood Type <span class="span-blood-type ">{{choosenBloodType}}</span>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+        <ion-icon type="add"></ion-icon> Number Of Units
+    </ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+        <ion-icon name="text"></ion-icon> Brief
+    </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <br>
+
+  <div class="myimage"><img class="img-width-height" src="{{imgsrc}}" /></div>
+  <div style="text-align: center">
+    <button (click)="drop1()">10%</button>
+    <button (click)="drop2()">20%</button>
+    <button (click)="drop3()">30%</button>
+    <button (click)="drop4()">40%</button>
+    <button (click)="drop5()">50%</button>
+    <br>
+    <button (click)="drop6()">60%</button>
+    <button (click)="drop7()">70%</button>
+    <button (click)="drop8()">80%</button>
+    <button (click)="drop9()">90%</button>
+    <button (click)="drop10()">100%</button>
+  </div>
+
+  <button ion-button (click)="onAdd()">Add</button>
+
+</ion-content>

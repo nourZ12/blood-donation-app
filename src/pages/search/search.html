@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AnnouncementsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  </ion-header>
+  
+  <ion-content padding>
+     <input type="text" style="width: 100%" placeholder="Enter Blood Type..."> 
+    <ion-list>
+      <!--
+      <ion-item *ngFor="let a of announcements; index as i" (click)="goToAnnouncementPage()">
+        <ion-label color="red" >NEEDED: {{a}}</ion-label>
+      </ion-item>
+    -->
+      <ion-card *ngFor="let a of announcements; index as i">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <!--<img class="flex-grow-1" src="../../assets/o_positive.jpg" />-->
+              <ion-col class="disp-flex"><img class="flex-grow-1" src="../../assets/o_positive.jpg" /></ion-col>
+              <ion-col class="disp-flex">
+                <p class="flex-grow-1">
+                  Name
+                  <br/>
+                  <b>Nour Zalatimo</b>
+                  <br/>
+                  Location
+                  <br/>
+                  <b>AlQuds </b>
+                  <br/>
+                 
+                </p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>   
+              </ion-col>
+              <ion-col>   
+                </ion-col>
+                <ion-col class="disp-flex">   
+                    <span class="flex-grow-1" style="font-weight:bold;color:#E94B6E">REQUEST? </span>
+                  </ion-col>
+                    <ion-col>
+                    <input type="checkbox" style="display: inline;margin-left:5px;"> 
+                 
+                  </ion-col>
+             
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+  
+  
+    </ion-list>
+  </ion-content>

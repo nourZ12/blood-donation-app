@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-navbar>
+      <ion-buttons start>
+          <button  ion-button (click)="onOpenMenu()">
+              <ion-icon name="menu"></ion-icon>
+            </button>
+      </ion-buttons>
+     
+      <ion-title>Announcements</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-list>
+      <!--
+      <ion-item *ngFor="let a of announcements; index as i" (click)="goToAnnouncementPage()">
+        <ion-label color="red" >NEEDED: {{a}}</ion-label>
+      </ion-item>
+    -->
+      <ion-card *ngFor="let a of announcements; index as i">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <!--<img class="flex-grow-1" src="../../assets/o_positive.jpg" />-->
+              <ion-col class="disp-flex"><img class="flex-grow-1" src="../../assets/o_positive.jpg" /></ion-col>
+              <ion-col class="disp-flex">
+                <p class="flex-grow-1">
+                  Name
+                  <br/>
+                  <b>John</b>
+                  <br/>
+                  Location
+                  <br/>
+                  <b>Hilal Hospital </b>
+                  <br/>
+                  Units
+                  <br/>
+                  <b>10</b>
+                </p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+                <button (click)="goToDonatePage()" color="donate" class="button-donate" ion-button >DONATE</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+  
+  
+    </ion-list>
+  </ion-content>
