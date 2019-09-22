@@ -6,47 +6,48 @@
   
 
 <ion-content padding color="background">
+  <form #f="ngForm" (ngSubmit)="getInfo(f)" >
   <ion-list>
     <ion-item>
       <ion-label floating>
         <ion-icon name="person"></ion-icon> Name
       </ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" name="name" ngModel required></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>
         <ion-icon name="mail"></ion-icon> Email
       </ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="email" name="email" ngModel></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>
         <ion-icon name="key"></ion-icon> Password
       </ion-label>
-      <ion-input type="passowrd"></ion-input>
+      <ion-input type="password" name="password" ngModel></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label floating>
           <ion-icon name="locate"></ion-icon> Location
         </ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" name="location" ngModel required></ion-input>
       </ion-item>
 
     <ion-item>
       <ion-label floating>
         <ion-icon name="call"></ion-icon> Phone
       </ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" name="phone" ngModel required></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>
         <ion-icon name="calendar"></ion-icon> Date of Birth
       </ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+      <ion-datetime displayFormat="MM/DD/YYYY" name="date" ngModel required></ion-datetime>
     </ion-item>
 
     <ion-row  class="padding-top-date">
@@ -79,10 +80,11 @@
 
     <ion-item>
       <ion-row justify-content-center>
-          <button color="dark" class="button-style" type="submit" (click)="onSubmit()" ion-button>SIGN UP</button>
+          <button color="dark" class="button-style" type="submit" (click)="onSignUp()" ion-button [disabled]="!f.valid">SIGN UP</button>
         </ion-row>
     </ion-item>
 
 
   </ion-list>
+</form>
 </ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Donate</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="my-image">
+    <img src="../../assets/donatePic.gif" />
+  </div>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label color="primary">When was your last Donation ?</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">How Much Is Your Blood Strength?</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-range min="8" max="17.5" [(ngModel)]="saturation" color="secondary">
+        <ion-label range-left>8</ion-label>
+        <ion-label range-right>17.5</ion-label>
+      </ion-range>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label color="primary">Smoker ?</ion-label>
+      <ion-checkbox color="black"></ion-checkbox>
+    </ion-item>
+
+    <button ion-button full class="btn1">Check</button>
+  </ion-list>
+</ion-content>

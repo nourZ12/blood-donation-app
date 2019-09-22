@@ -1,0 +1,40 @@
+page-announcements {
+    *{
+       padding:0!important;
+     
+    }
+    ion-title{
+        font-family: Righteous !important;
+        font-size: 4rem;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    ion-label{
+        color:black!important;
+    }
+    .button-donate{
+       
+        padding:2px!important;
+        width:70%!important;
+    }
+    img{
+        width:6em;
+    }
+    .disp-flex{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .flex-grow-1{
+        flex:1;
+    }
+    b{
+        font-size: 2rem;
+    }
+    .card
+{
+     margin-bottom: 35px !important;
+}
+
+    
+}

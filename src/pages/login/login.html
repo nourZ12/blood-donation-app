@@ -6,26 +6,28 @@
 
 <ion-content padding>
   <img src="../../assets/login.gif" />
+  <form #f="ngForm" (ngSubmit)="logInUser(f)">
   <ion-list>
     <ion-item>
       <ion-label floating>
         <ion-icon name="mail"></ion-icon> Email
       </ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" name="email" ngModel></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>
         <ion-icon name="key"></ion-icon> Password
       </ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" name="password" ngModel></ion-input>
     </ion-item>
 
 
     <ion-item padding>
       <ion-row justify-content-center>
-        <button color="dark" class="button-style" type="submit" (click)="onLogIn()" ion-button>LOG IN</button>
+        <button color="dark" class="button-style" type="submit"  ion-button>LOG IN</button>
       </ion-row>
     </ion-item>
   </ion-list>
+</form>
 </ion-content>
