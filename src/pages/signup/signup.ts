@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { BloodTypePage } from '../../shared/blood-type/blood-type';
+import { BloodTypeComponent } from '../../components/blood-type/blood-type';
 
-/**
- * Generated class for the SignupPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +10,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html',
 })
 export class SignupPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+choosenBloodType: string = "";
+  constructor(public navCtrl: NavController, public navParams: NavParams,private modalCtrl: ModalController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
-  }
+onSubmit() {
+  this.navCtrl.push(BloodTypePage);
+}
 
+alert(){
+const modal = this.modalCtrl.create('blood-type');
+  modal.present();
+
+  modal.onDidDismiss(data => {
+    // Do things with data coming from modal, for instance :
+    console.log(data);
+    this.choosenBloodType = data.type;
+});
+
+    }
 }

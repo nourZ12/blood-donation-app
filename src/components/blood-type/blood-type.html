@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-nav>
+    <ion-title>
+      What's Your Blood Type?
+    </ion-title>
+    <button ion-button end>Close</button>
+  </ion-nav>
+</ion-header>
+<ion-content padding>
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col  class="col-height" *ngFor="let blood of bloodType">
+          <button class="button-blood-type" value="{{blood}}">
+            {{blood}}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

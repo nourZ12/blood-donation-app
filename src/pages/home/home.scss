@@ -1,15 +1,15 @@
 page-home {
-    .h1-life-saver {
-        margin-top: 40px;
-        font-size: 4rem;
-        letter-spacing: 0.5rem;
+    .h1-logo {
+        margin-top: 23rem;
+        font-size: 6rem;
+        letter-spacing: 0.8rem;
         font-family: Righteous;
         color: black;
         text-align: center
     }
 
    ion-content{
-        --background: url('../../assets/mainpage.jpg')  no-repeat center / cover;
+        background: url('../../assets/blood-donate.gif')  no-repeat top;
 
     }
     .style-button {

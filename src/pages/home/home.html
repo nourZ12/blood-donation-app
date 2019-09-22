@@ -1,16 +1,17 @@
 <ion-content>
   <ion-grid style="background-color: transparent">
     <ion-col>
+   
       <ion-row justify-content-center>
-        <h1 class="h1-life-saver">Life Saver</h1>
+          <h1 class="h1-logo">Drop</h1>
+        </ion-row>
+
+      <ion-row style=" padding-top: 13rem" justify-content-center>
+        <button expand="block" color="dark" class="style-button" (click)=" onSignUp()" ion-button> SIGN UP</button>
       </ion-row>
 
-      <ion-row style=" padding-top: 28rem" justify-content-center>
-        <button expand="block" color="dark" class="style-button" (click)="onSignUp()" ion-button> SIGN UP</button>
-      </ion-row>
-
       <ion-row justify-content-center>
-        <button expand="block" color="dark" class="style-button" ion-button> LOG IN</button>
+        <button expand="block" color="dark" class="style-button" (click)="onLogIn()" ion-button> LOG IN</button>
       </ion-row>
 
     </ion-col>

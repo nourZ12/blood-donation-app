@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-row justify-content-between>
+      <ion-col style="margin: auto 0">
+        <ion-title>What's Your Blood Type?</ion-title>
+      </ion-col>
+      <ion-col col-2>
+        <button style="outline-color: transparent" ion-button icon-only outline (click)="onClose()"><ion-icon name="close"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+
+<button ion-button end>Close</button>
+<ion-content padding>
+  <ion-grid>
+    <ion-row justify-content-center class="margin-row">
+      <ion-col class="col-height" *ngFor="let blood of bloodType">
+        <button class="button-blood-type" value="{{blood}}" (click)=onChoose(blood)>
+          {{blood}}
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
