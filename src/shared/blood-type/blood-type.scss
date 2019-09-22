@@ -1,0 +1,35 @@
+page-blood-type {
+
+    .button-blood-type {
+        width: inherit;
+        height: inherit;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 2rem;
+        border-radius: 50%;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        background-color: transparent;
+        color: rgb(234, 122, 124);
+        outline-color: #999999;
+    }
+button:hover {
+    background-color:rgb(234, 122, 124);
+    color: white;
+}
+.col-height{
+    height: 9rem;
+    width: 9rem;
+    margin: 1.5rem;
+}
+button:after{
+    background-color: aqua;
+}
+
+.margin-row{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+}

@@ -1,9 +1,88 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Sign Up</ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+      <ion-title>Signup</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
 
-<ion-content padding>
-<ion-input placeholder="Name"></ion-input>
+<ion-content padding color="background">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>
+        <ion-icon name="person"></ion-icon> Name
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>
+        <ion-icon name="mail"></ion-icon> Email
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>
+        <ion-icon name="key"></ion-icon> Password
+      </ion-label>
+      <ion-input type="passowrd"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>
+          <ion-icon name="locate"></ion-icon> Location
+        </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+    <ion-item>
+      <ion-label floating>
+        <ion-icon name="call"></ion-icon> Phone
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>
+        <ion-icon name="calendar"></ion-icon> Date of Birth
+      </ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+    </ion-item>
+
+    <ion-row  class="padding-top-date">
+
+      <ion-col>
+        <ion-item >
+          <ion-label color="input">
+            <ion-icon name="female"></ion-icon> Female
+          </ion-label>
+          <ion-radio value="female">Female</ion-radio>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item >
+          <ion-label color="input">
+            <ion-icon name="male"></ion-icon> Male
+          </ion-label>
+          <ion-radio value="male"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item class="padding-top-date">
+      <ion-label (click)="alert()" color="input" >
+          <ion-icon name="water"></ion-icon>  Blood Type <span class="span-blood-type ">{{choosenBloodType}}</span>
+      </ion-label>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-row justify-content-center>
+          <button color="dark" class="button-style" type="submit" (click)="onSubmit()" ion-button>SIGN UP</button>
+        </ion-row>
+    </ion-item>
+
+
+  </ion-list>
 </ion-content>
